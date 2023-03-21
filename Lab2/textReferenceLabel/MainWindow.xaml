@@ -1,0 +1,28 @@
+﻿<Window x:Class="textReferenceLabel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:textReferenceLabel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="300">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="BorderThickness" Value="2"></Setter>
+            <Setter Property="BorderBrush" Value="SkyBlue"></Setter>
+            <Style.Triggers>
+                <Trigger Property="Text" Value="">
+                    <Setter Property="Background" Value="Yellow"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <Label Content="Name"></Label>
+            <TextBox></TextBox>
+            <Label Content="Adress"></Label>
+            <TextBox></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>

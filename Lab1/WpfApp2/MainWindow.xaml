@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border 
+            CornerRadius="5"
+            BorderBrush="Red"
+            BorderThickness="5"
+            Background="Yellow"
+            Padding="5"
+            >
+
+            <InkCanvas Name="InkCan"></InkCanvas>
+        </Border>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <GroupBox Width="100" Header="Colors">
+                <StackPanel>
+                    <RadioButton Checked="Change_Color" >Red</RadioButton>
+                    <RadioButton Checked="Change_Color" >Green</RadioButton>
+                    <RadioButton Checked="Change_Color" >Blue</RadioButton>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Width="150" Header="Modes">
+                <StackPanel>
+                    <RadioButton Checked="Change_Mode" >Ink</RadioButton>
+                    <RadioButton Checked="Change_Mode" >Select</RadioButton>
+                    <RadioButton Checked="Change_Mode" >Erase</RadioButton>
+                    <RadioButton Checked="Change_Mode" >Erase by strock</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Width="125" Header="Drawing shapes">                <StackPanel Margin="0,0,11,0">                    <RadioButton Checked="Change_Shape" >Ellipse</RadioButton>                    <RadioButton Checked="Change_Shape" >Rectangle</RadioButton>                </StackPanel>            </GroupBox>            <GroupBox Width="120" Header="Brush size">                <StackPanel>                    <RadioButton Checked="Change_Brush" >Small</RadioButton>                    <RadioButton Checked="Change_Brush" >Medium</RadioButton>                    <RadioButton Checked="Change_Brush" >Large</RadioButton>                </StackPanel>            </GroupBox>            <Grid Width="321">                <Grid.RowDefinitions>                    <RowDefinition ></RowDefinition>                    <RowDefinition ></RowDefinition>                </Grid.RowDefinitions>                <StackPanel Orientation="Horizontal" >                    <Button Content="New" Width="50" Height="20" Margin="5" Click="Button_new"></Button>                    <Button Content="Save" Width="50" Height="20" Margin="5" Click="Button_save"></Button>                    <Button Content="Load" Width="50" Height="20" Margin="5" Click="Button_load"/>                </StackPanel>                <StackPanel Orientation="Horizontal" Grid.Row="1">                    <Button Content="Copy" Width="50" Height="20" Margin="5" Click="Button_copy"></Button>                    <Button Content="Cut" Width="50" Height="20" Margin="5" Click="Button_cut"></Button>                    <Button Content="Paste" Width="50" Height="20" Margin="5" Click="Button_paste"/>                </StackPanel>            </Grid>
+
+        </StackPanel>
+    </Grid>
+</Window>

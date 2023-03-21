@@ -1,0 +1,62 @@
+﻿<Window x:Class="textEditing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:textEditing"
+        mc:Ignorable="d"
+        Title="textEditing" Height="300" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Height="auto">
+            <!--<RichTextBox Height="200" BorderBrush="Aqua" Name="txt" BorderThickness="2">
+            </RichTextBox>-->
+            <TextBox Height="94" Margin="1" BorderBrush="Aqua" Name="txt" TextWrapping="Wrap" BorderThickness="2">Default starting text.</TextBox>
+        </StackPanel>
+        <WrapPanel Grid.Row="1" Height="auto" Margin="0,12,0,0">
+            <Button Content="Set text" Width="50" Height="20" Margin="5" Click="SetText_Click"></Button>
+            <Button Content="Select All" Width="50" Height="20" Margin="5" Click="SelectAll_Click"></Button>
+            <Button Content="Clear" Width="50" Height="20" Margin="5" Click="Clear_Click"></Button>
+            <Button Content="Prepend" Width="50" Height="20" Margin="5" Click="prepend_Click"></Button>
+            <Button Content="Insert" Width="50" Height="20" Margin="5" Click="Insert_Click"></Button>
+            <Button Content="Append" Width="50" Height="20" Margin="5" Click="Append_Click"></Button>
+            <Button Content="Cut" Width="50" Height="20" Margin="5" Click="Cut_Click"></Button>
+            <Button Content="Paste" Width="50" Height="20" Margin="5" Click="Paste_Click"></Button>
+            <Button Content="Undo" Width="50" Height="20" Margin="5" Click="Undo_Click"></Button>
+        </WrapPanel>
+        <StackPanel Grid.Row="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <RadioButton Grid.Column="0" Checked="readWrite" Margin="100 0 100 10" >Editable</RadioButton>
+                        <RadioButton Grid.Column="1" Checked="readWrite" >Read Only</RadioButton>
+                    </Grid>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                            <ColumnDefinition Width="auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <RadioButton Grid.Column="0" Checked="align" Margin="80 0 0 0" >Left</RadioButton>
+                        <RadioButton Grid.Column="1" Checked="align" Margin="80 0 0 0">Center</RadioButton>
+                        <RadioButton Grid.Column="2" Checked="align" Margin="80 0 0 0">Right</RadioButton>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

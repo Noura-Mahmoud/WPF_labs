@@ -1,0 +1,16 @@
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing.csproj.AssemblyReference.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing.csproj.SuggestedBindingRedirects.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\MainWindow.g.cs
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\App.g.cs
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing_MarkupCompile.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing_MarkupCompile.lref
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\bin\Debug\textEditing.exe.config
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\bin\Debug\textEditing.exe
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\bin\Debug\textEditing.pdb
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\MainWindow.baml
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing.g.resources
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing.Properties.Resources.resources
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing.csproj.GenerateResource.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing.csproj.CoreCompileInputs.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing.exe
+G:\ITI_mobile cross\WPF\Day1\Lab1\textEditing\obj\Debug\textEditing.pdb

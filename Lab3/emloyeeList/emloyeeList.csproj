@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="wpf_t3\a.jpeg" />
+    <None Remove="wpf_t3\e.jpeg" />
+    <None Remove="wpf_t3\h.jpeg" />
+    <None Remove="wpf_t3\i.jpeg" />
+    <None Remove="wpf_t3\m.jpeg" />
+    <None Remove="wpf_t3\n.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="wpf_t3\a.jpeg" />
+    <Resource Include="wpf_t3\e.jpeg" />
+    <Resource Include="wpf_t3\h.jpeg" />
+    <Resource Include="wpf_t3\i.jpeg" />
+    <Resource Include="wpf_t3\m.jpeg" />
+    <Resource Include="wpf_t3\n.jpeg" />
+  </ItemGroup>
+
+</Project>

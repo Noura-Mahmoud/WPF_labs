@@ -1,0 +1,16 @@
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\bin\Debug\formApplication.exe.config
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\bin\Debug\formApplication.exe
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\bin\Debug\formApplication.pdb
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication.csproj.AssemblyReference.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication.csproj.SuggestedBindingRedirects.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\MainWindow.g.cs
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\App.g.cs
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication_MarkupCompile.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication_MarkupCompile.lref
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\MainWindow.baml
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication.g.resources
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication.Properties.Resources.resources
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication.csproj.GenerateResource.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication.csproj.CoreCompileInputs.cache
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication.exe
+G:\ITI_mobile cross\WPF\Day1\Lab1\formApplication\obj\Debug\formApplication.pdb

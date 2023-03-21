@@ -1,0 +1,64 @@
+﻿<Window x:Class="calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="350" Width="300">
+    <Window.Resources>
+        <Style x:Key="btnstyle" TargetType="Button">
+            <Setter Property="Button.Width" Value="50"></Setter>
+            <Setter Property="Button.Height" Value="40"></Setter>
+            <Setter Property="Button.Content" Value="Click"></Setter>
+            <Setter Property="Button.FontFamily" Value="Arial"></Setter>
+
+            <Setter Property="Button.Margin" Value="10"></Setter>
+            <Setter Property="Button.FontWeight" Value="Bold"></Setter>
+            <Setter Property="Button.FontSize" Value="25"></Setter>
+            <Setter Property="Button.VerticalAlignment" Value="Center"></Setter>
+            <!--<Setter Property="Button.Background" Value="{StaticResource ResourceKey=BtnBG}"></Setter>-->
+            <Setter Property="Button.Background" Value="Gray"></Setter>
+        </Style>
+        <Style x:Key="opstyle" TargetType="Button" BasedOn="{StaticResource ResourceKey=btnstyle}">
+            <Setter Property="Button.Width" Value="55"></Setter>
+            <Setter Property="Button.Height" Value="30"></Setter>
+            <Setter Property="Button.Margin" Value="5"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.ColumnSpan="4">
+            <Label Name="screen" Height="70" BorderThickness="10" BorderBrush="Gray" Content="{Binding ElementName=txt1,Path=Text}"></Label>
+        </StackPanel>
+        <StackPanel Grid.Column="0"  Orientation="Vertical" Margin="0,73,0,-6">
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">7</Button>
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">4</Button>
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">1</Button>
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">0</Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1"  Orientation="Vertical" Margin="0,73,0,-6">
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">8</Button>
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">5</Button>
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">2</Button>
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">.</Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2"  Orientation="Vertical" Margin="0,73,0,-6">
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">9</Button>
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">6</Button>
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">3</Button>
+            <Button Style="{StaticResource ResourceKey=btnstyle}" Click="Button_Click">+</Button>
+        </StackPanel>
+        <StackPanel Grid.Column="3"  Orientation="Vertical" Margin="0,90,0,0">
+            <Button Style="{StaticResource ResourceKey=opstyle}" Click="Button_Click">/</Button>
+            <Button Style="{StaticResource ResourceKey=opstyle}" Click="Button_Click">*</Button>
+            <Button Style="{StaticResource ResourceKey=opstyle}" Click="Button_Click">-</Button>
+            <Button Style="{StaticResource ResourceKey=opstyle}" Click="Button_Click" Height="95" Background="Orange">=</Button>
+        </StackPanel>
+    </Grid>
+</Window>
